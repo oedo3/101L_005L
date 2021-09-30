@@ -30,8 +30,6 @@ def game():
             mod5 = 'NULL'
     while mod7 == 'NULL':
         mod7 = int(input('What is the remainder when your number is divided by 7 ?'))
-        if mod7 > 7:
-            print('The value entered must be less than 3')
             mod7 = 'NULL'
         elif mod7 < 0:
             print('The value entered must be more than 0')
