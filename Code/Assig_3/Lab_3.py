@@ -1,13 +1,4 @@
-########################################################################
-##
 ## CS 101 Lab
-## Program #Flarsheim Guesser!
-## Name Osayamen Edo-Ohonba
-## Email Osayzone@gamil.com
-##
-## PROBLEM : guess the number knowing mod3,5, and 7
-##
-########################################################################
 def game():
     mod3, mod5, mod7 = 'NULL', 'NULL', 'NULL'
     print('Welcome to Flarsheim Guesser!\n')
