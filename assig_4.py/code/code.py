@@ -1,4 +1,6 @@
+#import random to simulate dice rolling
 import random
+#game function for reusability
 def game():
     chips, chipsw = 'NULL', 'NULL'
     while chips == 'NULL':
@@ -18,6 +20,7 @@ def game():
             print(f'The wager amount cannot be greater than how much you have.  {chips}')
             chipsw = 'NULL'
     chips -= chipsw
+#rolls being set
     s1 = random.randint(1,10)
     s2 = random.randint(1,10)
     s3 = random.randint(1,10)
@@ -35,8 +38,7 @@ def game():
     if s3 == h2:cnt += 1
     if s3 == h3:cnt += 1
     print(f'Your spin {s1} {s2} {s3}\nYou matched {cnt} reels\nYou won/lost {cnt}\nCurrent bank {chips}')
-    
-
+#while loop for continue logic
 cont = 'Y'
 while cont != 'n' and 'N' and 'NO':
     game()
