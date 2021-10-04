@@ -1,4 +1,3 @@
-## CS 101 Lab
 def game():
     mod3, mod5, mod7 = 'NULL', 'NULL', 'NULL'
     print('Welcome to Flarsheim Guesser!\n')
