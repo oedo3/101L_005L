@@ -1,3 +1,7 @@
+#Osay E
+#Thursday October 4th at 5:50 pm
+#Ceaser Cipher with encoding and decoding fumctionality
+
 #start function for most output
 def start():
 	print('Welcome to Caesar Cipher\n1) encode a message\n2) decode the message\nQ) quit')
