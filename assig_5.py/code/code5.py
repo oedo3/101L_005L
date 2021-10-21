@@ -10,32 +10,11 @@
 ##      Check string in portions and return True or False
 ##
 ########################################################################
-def get_school(card_id):
-    if card_id[5] == '1':
-        return 'School of Computing and Engineering SCE'
-    elif card_id[5] == '2':
-        return 'School of Law'
-    elif card_id[5] == '3':
-        return 'College of Arts and Sciences'
-    else:
-        return False
-
-def get_grade(card_id):
-    if card_id[6] == '1':
-        return 'Freshman'
-    elif card_id[6] == '2':
-        return 'Sophomore'
-    elif card_id[6] == '3':
-        return 'Junior'
-    elif card_id[6] == '4':
-        return 'Senior'
-    else:
-        return False
-
-def character_value(ch):
+import string
+def character_value(ch) -> int:
     return ord(ch) - 65
     
-def get_check_digit(card_id):
+def get_check_digit(card_id) -> int:
     check_value = 0
     for i in range(0,4):
         check_value += character_value(card_id[i]) * (i + 1)
@@ -43,7 +22,7 @@ def get_check_digit(card_id):
         check_value += (int(card_id[i]) * (int(i)+1))
     return check_value % 10
 
-def verify_check_digit(card_id):
+def verify_check_digit(card_id) -> tuple:
     if len(card_id) != 10:
         return (False, 'The length of the number given must be 10')
     else:
@@ -62,10 +41,32 @@ def verify_check_digit(card_id):
         else:
             return (True, '')
 
+def get_school(card_id) -> str:
+    if card_id[5] == '1':
+        return 'School of Computing and Engineering SCE'
+    elif card_id[5] == '2':
+        return 'School of Law'
+    elif card_id[5] == '3':
+        return 'College of Arts and Sciences'
+    else:
+        return False
+
+def get_grade(card_id) -> str:
+    if card_id[6] == '1':
+        return 'Freshman'
+    elif card_id[6] == '2':
+        return 'Sophomore'
+    elif card_id[6] == '3':
+        return 'Junior'
+    elif card_id[6] == '4':
+        return 'Senior'
+    else:
+        return False
+
 if __name__ == '__main__':
     card_id = 'NULL'
     
-    print('                    Linda Hall\n                   Library Check')
+    print('                    Linda Hall\n                Library Card Check')
     print('=====================================================')
     print()
 
