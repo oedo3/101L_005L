@@ -71,7 +71,7 @@ if __name__ == '__main__':
     print()
 
     while card_id != '':
-        card_id = input('Enter library card. Press enter to exit: ')
+        card_id = input('Enter library card. Press enter to exit==> ')
 
         if card_id == '':
             print('The End')
