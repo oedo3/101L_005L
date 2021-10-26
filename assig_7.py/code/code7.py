@@ -4,10 +4,7 @@
 ## Name: Osay E
 ## Email: ooenw7@umsystem.edu
 ##
-## PROBLEM : Create write a program to read through a file containing 
-## information about fuel economy and output the results to a file above 
-## a threshold that the user gives
-##
+## PROBLEM : Read and output information about cars in files
 ########################################################################
 def get_minimum_mpg():
     try:
