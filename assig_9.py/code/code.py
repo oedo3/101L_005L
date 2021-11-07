@@ -1,3 +1,21 @@
+#######################################################################
+## CS 101 Lab
+## Program 9
+## Name: Osay Edo Ohonba
+## Email: ooenw7@umsystem.edu
+##
+## PROBLEM : Create write a program to accses and understand crime data
+## ALGORITHM :
+##      import csv
+##      Define functions
+##      logic
+##      End display
+## ERROR HANDLING:
+##      N/A
+## OTHER COMMENTS:
+##      Any special comments
+##
+########################################################################
 import csv
 
 def reported_date_dict(data):
